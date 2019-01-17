@@ -1,0 +1,50 @@
+GET {{host-url}}//notebooks/all
+
+###
+
+GET {{host-url}}//notes/all
+
+###
+
+GET {{host-url}}/notes/1152331e-72f5-485e-a62a-65b1fd14fd17
+
+###
+
+POST {{host-url}}//notes
+Content-Type: application/json
+
+{
+  "title": "Hello Again",
+  "text": "Welcome to NoteIt Again !",
+  "notebookId": "fc5d1d8d-4f64-4f06-a582-135757d7d91c"
+}
+
+###
+
+POST {{host-url}}//feedback
+Content-Type: application/json
+
+{
+"name": "John",
+"email": "john@rediff.com",
+"feedback": "I like your app very much."
+}
+
+###
+
+DELETE {{host-url}}//notes/1152331e-72f5-485e-a62a-65b1fd14fd17
+
+###
+
+DELETE {{host-url}}//notebooks/c11dbccc-b84a-48a0-86d6-792b8c765b5b
+
+###
+
+POST {{host-url}}//notebooks
+Content-Type: application/json
+
+{
+  "name": "Plan"
+}
+
+###
